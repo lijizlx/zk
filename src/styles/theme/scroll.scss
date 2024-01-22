@@ -1,0 +1,37 @@
+.scroll-container {
+  overflow: auto;
+}
+
+/* 全局滚动条样式 */
+::-webkit-scrollbar {
+  width: 0px; /* 滚动条宽度 */
+  height: 5px;
+}
+
+/* 轨道不显示 */
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+/* 滑块背景色渐变 */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* 初始颜色 */
+  transition: background-color 0.3s; /* 过渡效果 */
+  border-radius: 100px;
+}
+
+/* 鼠标悬浮时显示滚动条 */
+.scroll-container:hover::-webkit-scrollbar {
+  //display: block;
+  display: none;
+}
+
+/* 鼠标悬浮时滑块背景色渐变 */
+.scroll-container:hover::-webkit-scrollbar-thumb {
+  background-color: #d3e7f8; /* 最终颜色 */
+}
+
+/* 鼠标没有悬浮的时候直接隐藏滚动条 */
+.scroll-container:not(:hover)::-webkit-scrollbar {
+  display: none;
+}
