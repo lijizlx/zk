@@ -3,7 +3,7 @@
     <div class="content">
       <div class="box">
         <div class="header-img">
-          <img src="src/assets/img/coffee.png">
+          
           <svgIcon name="lock" width="35px" height="35px" fill="red" class="lock-icon"></svgIcon>
           <div class="locked-text">{{ t('system.lockedText') }}</div>
           <div class="unlock">
